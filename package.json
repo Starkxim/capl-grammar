@@ -1,0 +1,31 @@
+{
+  "name": "capl-grammar",
+  "displayName": "CAPL-Grammar",
+  "description": "Syntax highlighting for CAPL",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "capl",
+      "aliases": ["CAPL", "capl"],
+      "extensions": [".cin"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "capl",
+      "scopeName": "source.cin",
+      "path": "./syntaxes/capl.tmLanguage.json"
+    }],
+    "configurationDefaults": {
+      "[capl]": {
+        "editor.semanticHighlighting.enabled": true,
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}

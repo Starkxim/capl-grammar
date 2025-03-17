@@ -13,7 +13,7 @@
     "languages": [{
       "id": "capl",
       "aliases": ["CAPL", "capl"],
-      "extensions": [".cin"],
+      "extensions": [".cin",".can"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
